@@ -4,6 +4,3 @@ coverage:
   version: 2
   enabled: true
   ratchet: 100
-
-
-
