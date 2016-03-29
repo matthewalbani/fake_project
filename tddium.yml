@@ -9,3 +9,4 @@ tests:
   - echo $TEST_ENV_NUMBER
   - echo "im a patch"
   - echo "im not in upstream"
+  - echo "with snapshot"
