@@ -7,3 +7,4 @@ coverage:
 tests:
   - echo $PARALLEL_TEST_GROUPS
   - echo $TEST_ENV_NUMBER
+  - echo "im a patch"
