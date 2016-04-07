@@ -1,0 +1,212 @@
+From 18790d496f01a6ea3bda9245a26b34fdec69381c Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Thu, 24 Mar 2016 11:15:02 -0700
+Subject: [PATCH 1/9] added tests
+
+---
+ tddium.yml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/tddium.yml b/tddium.yml
+index 43b2f55..a6f386d 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -4,3 +4,6 @@ coverage:
+   version: 2
+   enabled: true
+   ratchet: 100
++tests:
++  - echo $PARALLEL_TEST_GROUPS
++  - echo $TEST_ENV_NUMBER
+-- 
+2.6.4 (Apple Git-63)
+
+
+From 638c089ef39bac4fa88094c7e6830cd03d7cdce1 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Thu, 24 Mar 2016 11:20:43 -0700
+Subject: [PATCH 2/9] added tests
+
+---
+ spec/env_spec.rb | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 spec/env_spec.rb
+
+diff --git a/spec/env_spec.rb b/spec/env_spec.rb
+new file mode 100644
+index 0000000..211929e
+--- /dev/null
++++ b/spec/env_spec.rb
+@@ -0,0 +1,10 @@
++require "spec_helper"
++require "pp"
++
++describe FakedProject do
++  it "should output env" do
++    pp ENV['TEST_ENV_NUMBER']
++    pp ENV['PARALLEL_TEST_GROUPS']
++  end
++
++end
+-- 
+2.6.4 (Apple Git-63)
+
+
+From 1566daa139a2cd771480bc3117874ec962fa07d5 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Mon, 28 Mar 2016 18:32:36 -0700
+Subject: [PATCH 3/9] patch message
+
+---
+ tddium.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tddium.yml b/tddium.yml
+index a6f386d..a0c3fe8 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -7,3 +7,4 @@ coverage:
+ tests:
+   - echo $PARALLEL_TEST_GROUPS
+   - echo $TEST_ENV_NUMBER
++  - echo "im a patch"
+-- 
+2.6.4 (Apple Git-63)
+
+
+From 10a1fc51edd19ad25a09d69a822aa500f43da4a1 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Tue, 29 Mar 2016 10:04:27 -0700
+Subject: [PATCH 4/9] Not in upstream"
+
+---
+ tddium.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tddium.yml b/tddium.yml
+index a0c3fe8..bed8308 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -8,3 +8,4 @@ tests:
+   - echo $PARALLEL_TEST_GROUPS
+   - echo $TEST_ENV_NUMBER
+   - echo "im a patch"
++  - echo "im not in upstream"
+-- 
+2.6.4 (Apple Git-63)
+
+
+From 179dae8c22180bab8bc4ae75cb539dee10c56456 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Tue, 29 Mar 2016 14:56:27 -0700
+Subject: [PATCH 5/9] snapshot
+
+---
+ tddium.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tddium.yml b/tddium.yml
+index bed8308..576fa7e 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -9,3 +9,4 @@ tests:
+   - echo $TEST_ENV_NUMBER
+   - echo "im a patch"
+   - echo "im not in upstream"
++  - echo "with snapshot"
+-- 
+2.6.4 (Apple Git-63)
+
+
+From 30efe91c895271257742fcb13209b1efd870ebcd Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Tue, 29 Mar 2016 16:13:06 -0700
+Subject: [PATCH 6/9] remove ratchet
+
+---
+ tddium.yml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/tddium.yml b/tddium.yml
+index 576fa7e..4a9332b 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -3,7 +3,6 @@ bundler_version: 1.10.6
+ coverage:
+   version: 2
+   enabled: true
+-  ratchet: 100
+ tests:
+   - echo $PARALLEL_TEST_GROUPS
+   - echo $TEST_ENV_NUMBER
+-- 
+2.6.4 (Apple Git-63)
+
+
+From c8f79d5fc82d0b500aed17986ce17fa6925ac412 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Thu, 31 Mar 2016 16:11:24 -0700
+Subject: [PATCH 7/9] test
+
+---
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..b100596
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++.solano*
+-- 
+2.6.4 (Apple Git-63)
+
+
+From e41bb99bdc68ae366cffb1ae2b087a235cacf68c Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Thu, 31 Mar 2016 16:13:13 -0700
+Subject: [PATCH 8/9] removed silly tes
+
+---
+ tddium.yml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/tddium.yml b/tddium.yml
+index 4a9332b..7823352 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -6,6 +6,5 @@ coverage:
+ tests:
+   - echo $PARALLEL_TEST_GROUPS
+   - echo $TEST_ENV_NUMBER
+-  - echo "im a patch"
+   - echo "im not in upstream"
+   - echo "with snapshot"
+-- 
+2.6.4 (Apple Git-63)
+
+
+From df7942c916bde4baaa30c1b6e87f6cfdba70b2d6 Mon Sep 17 00:00:00 2001
+From: Matthew Albani <Matthew.jalbani@gmail.com>
+Date: Thu, 31 Mar 2016 16:13:22 -0700
+Subject: [PATCH 9/9] removed silly test 2
+
+---
+ tddium.yml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/tddium.yml b/tddium.yml
+index 7823352..9214718 100644
+--- a/tddium.yml
++++ b/tddium.yml
+@@ -6,5 +6,4 @@ coverage:
+ tests:
+   - echo $PARALLEL_TEST_GROUPS
+   - echo $TEST_ENV_NUMBER
+-  - echo "im not in upstream"
+   - echo "with snapshot"
+-- 
+2.6.4 (Apple Git-63)
+
