@@ -5,4 +5,4 @@ coverage:
   enabled: true
   ratchet: 100
 system:
-  queue: 'cats'
+  queue: 'docker'
