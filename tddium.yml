@@ -7,4 +7,5 @@ coverage:
 tests:
   - git status
   - git rev-parse HEAD
+  - echo 'I am from the master'
 
