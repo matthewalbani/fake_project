@@ -7,4 +7,4 @@ coverage:
 tests:
   - git status
   - git rev-parse HEAD
-
+  - echo 'im only on the master_merge' 
