@@ -3,6 +3,8 @@ bundler_version: 1.10.6
 coverage:
   version: 2
   enabled: true
-  ratchet: 100
-system:
-  queue: 'docker'
+  ratchet: 80
+tests:
+  - git status
+  - git rev-parse HEAD
+
