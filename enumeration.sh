@@ -1,1 +1,1 @@
-echo "{\"test_scripts\":[\"features/test_stuff.feature\",\"spec/faked_spec.rb\",\"spec/forking_spec.rb\",\"spec/meta_magic_spec.rb\",\"spec/some_class_spec.rb\",\"spec/spec_helper.rb\",\"test/faked_test.rb\"]}"
+return "{\"test_scripts\":[\"features/test_stuff.feature\",\"spec/faked_spec.rb\",\"spec/forking_spec.rb\",\"spec/meta_magic_spec.rb\",\"spec/some_class_spec.rb\",\"spec/spec_helper.rb\",\"test/faked_test.rb\"]}"
