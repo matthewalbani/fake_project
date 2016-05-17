@@ -10,4 +10,5 @@ tests:
   - git status
   - git rev-parse HEAD
   - echo 'I am from the master'
-
+test_pattern:
+  - test/faked_test.rb
