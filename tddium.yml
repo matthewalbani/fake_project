@@ -6,9 +6,24 @@ coverage:
   version: 2
   enabled: true
   ratchet: 80
-tests:
-  - git status
-  - git rev-parse HEAD
-  - echo 'I am from the master'
-test_pattern:
-  - test/faked_test.rb
+:test_pattern:
+    - 'spec/**/*_spec.rb'
+  :tests:
+    - type: junit
+      command: 'bundle exec rake teaspoon FORMATTERS="junit>./test.xml"'
+      report_files:
+        - './test.xml'
+    - type: custom
+      command: 'script/audit_gems.sh'
+      invocation: single
+      output: exit-status
+    - 'npm run lint'
+    - type: junit
+      command: 'npm test'
+      report_files:
+        - 'frontend/javascripts/spec/results/test.xml'
+  :test_exclude_pattern:
+    - 'spec/performance/*_spec.rb'
+    - 'spec/request/states_archive/*_spec.rb'
+    - 'spec/fixture_generators/*.rb'
+    - 'spec/initializers/wicked_pdf_helper_spec.rb'
