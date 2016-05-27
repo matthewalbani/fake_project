@@ -3,9 +3,4 @@ bundler_version: 1.10.6
 coverage:
   version: 2
   enabled: true
-tests:
-  - echo $PARALLEL_TEST_GROUPS
-  - echo $TEST_ENV_NUMBER
-  - echo "im a patch"
-  - echo "im not in upstream"
-  - echo "with snapshot"
+tests_pattern: "cats.rb"
