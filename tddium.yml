@@ -3,4 +3,5 @@ bundler_version: 1.10.6
 coverage:
   version: 2
   enabled: true
-tests_pattern: "cats.rb"
+test_pattern: 
+  - "cats.rb"
