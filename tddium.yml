@@ -1,14 +1,33 @@
 ruby_version: "2.1.2"
 bundler_version: 1.10.6
-hooks:
-  enumeration: ./enumeration.sh
 coverage:
   version: 2
   enabled: true
   ratchet: 80
-tests:
-  - git status
-  - git rev-parse HEAD
-  - echo 'I am from the master'
-test_pattern:
-  - test/faked_test.rb
+plan:
+  - default
+  - default2
+  - default3
+profiles:
+  default:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from default1'
+    test_pattern:
+      - test/faked_test.rb
+  default2:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the default 2'
+    test_pattern:
+      - test/**_test.rb
+  default3:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the default 3'
+    hooks:
+      enumeration: ./enumeration.sh
+      
