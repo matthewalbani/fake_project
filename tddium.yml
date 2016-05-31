@@ -3,7 +3,6 @@ bundler_version: 1.10.6
 coverage:
   version: 2
   enabled: true
-  ratchet: 80
 plan:
   - default
   - default2
