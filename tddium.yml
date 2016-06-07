@@ -33,7 +33,7 @@ profiles:
         report_files:
           - parse_me2.xml
     test_pattern:
-      - test/faked_test.rb
+      - test/**.rb
   other:
     tests:
       - echo 'im other'
