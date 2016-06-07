@@ -13,6 +13,10 @@ tests:
   - type: custom
     command: '/bin/true'
     invocation: single  # I don't recall ever noticing this in a live config
+    output: exit-status  
+  - type: junit
+    command: '/bin/true'
+    invocation: single  # I don't recall ever noticing this in a live config
     output: exit-status
 test_pattern:
   - test/faked_test.rb
