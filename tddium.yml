@@ -8,27 +8,32 @@ coverage:
   version: 2
   enabled: true
   ratchet: 80
-tests:
-  - git status
-  - git rev-parse HEAD
-  - echo 'I am from the master'
-  - type: custom
-    command: '/bin/true'
-    invocation: single  # I don't recall ever noticing this in a live config
-    output: exit-status  
-  - type: junit
-    command: '/bin/true'
-    invocation: single  # I don't recall ever noticing this in a live config
-    output: exit-status  
-  - name: parse_junit_xml_no_testsuite_name
-    type: junit
-    command: cp testsuite_no_name.xml parse_me.xml
-    report_files:
-      - parse_me.xml  
-  - type: junit
-    command: cp testsuite_no_name.xml parse_me2.xml
-    invocation: single
-    report_files:
-      - parse_me2.xml
-test_pattern:
-  - test/faked_test.rb
+profiles:
+  default:
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the master'
+      - type: custom
+        command: '/bin/true'
+        invocation: single  # I don't recall ever noticing this in a live config
+        output: exit-status  
+      - type: junit
+        command: '/bin/true'
+        invocation: single  # I don't recall ever noticing this in a live config
+        output: exit-status  
+      - name: parse_junit_xml_no_testsuite_name
+        type: junit
+        command: cp testsuite_no_name.xml parse_me.xml
+        report_files:
+          - parse_me.xml  
+      - type: junit
+        command: cp testsuite_no_name.xml parse_me2.xml
+        invocation: single
+        report_files:
+          - parse_me2.xml
+    test_pattern:
+      - test/faked_test.rb
+  other:
+    tests:
+      - echo 'im other'
