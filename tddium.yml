@@ -24,6 +24,10 @@ tests:
     type: junit
     command: mv testsuite_no_name.xml parse_me.xml
     report_files:
-      - parse_me.xml
+      - parse_me.xml  
+  - type: junit
+    command: mv testsuite_no_name.xml parse_me2.xml
+    report_files:
+      - parse_me2.xml
 test_pattern:
   - test/faked_test.rb
