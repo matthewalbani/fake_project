@@ -1,0 +1,31 @@
+<testsuite tests="29">
+  <testcase classname="BudgetActual_TEST" name="BudgetActualBoth" time="1.506" />
+  <testcase classname="BudgetActual_TEST" name="BudgetActualReportingYearTest" time="1.177" />
+  <testcase classname="BudgetActual_TEST" name="BudgetActualReportingYearTestCompany2" time="1.286" />
+  <testcase classname="BudgetActual_TEST" name="NoAccessBudgetActualOnlyC3" time="0.262" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testAdjacentMentions" time="0.004" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testEmptyString" time="0.001" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testInvalidMentionType" time="0.007" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testLeadingMention" time="0.003" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testLinkAndHashtagParsing" time="0.673" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testMentionInComment" time="0.189" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testMentionOnly" time="0.002" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testNoMentions" time="0.001" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testNullString" time="0.002" />
+  <testcase classname="ConnectApiHelper_TESTS" name="testTrailingMention" time="0.002" />
+  <testcase classname="ContactSearchUtility_TEST" name="ContactSearch" time="0.401" />
+  <testcase classname="ConvertOptytoGrant_TESTS" name="OpportunitytoGrantConversionPage" time="1.4" />
+  <testcase classname="DeliverablesWizardController_TESTS" name="NewDeliverableCreation" time="0.76" />
+  <testcase classname="DepartmentUtility_TEST" name="DepartmentUtilityCreation" time="0.364" />
+  <testcase classname="GrantManagementUtilities_TESTS" name="ContactUserLookupTests" time="0.586" />
+  <testcase classname="GrantManagementUtilities_TESTS" name="CurrentUserLookupTests" time="0.261" />
+  <testcase classname="IssuesIntersectionController_TEST" name="MainComponentTest" time="0.836" />
+  <testcase classname="IssuesIntersectionController_TEST" name="MainComponentTestNoDefaults" time="0.933" />
+  <testcase classname="IssuesIntersectionController_TEST" name="MainComponentTestStaffDefaults" time="0.715" />
+  <testcase classname="ManageStaffParticipation_TESTS" name="UpdateStaffonOpportunity" time="1.536" />
+  <testcase classname="ParticipationControllerExtension_TEST" name="ControllerTestCancel" time="0.493" />
+  <testcase classname="ParticipationControllerExtension_TEST" name="ControllerTestErrors" time="0.186" />
+  <testcase classname="ParticipationControllerExtension_TEST" name="ControllerTestviaAction" time="1.404" />
+  <testcase classname="ParticipationControllerExtension_TEST" name="ControllerTestviaPage" time="0.863" />
+  <testcase classname="TestDataFactory_TEST" name="SetupCustomSettingsBudgeUpdate" time="0.22" />
+</testsuite>
