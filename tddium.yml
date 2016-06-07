@@ -10,5 +10,9 @@ tests:
   - git status
   - git rev-parse HEAD
   - echo 'I am from the master'
+  - type: custom
+    command: '/bin/true'
+    invocation: single  # I don't recall ever noticing this in a live config
+    output: exit-status
 test_pattern:
   - test/faked_test.rb
