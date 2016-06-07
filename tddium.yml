@@ -22,11 +22,11 @@ tests:
     output: exit-status  
   - name: parse_junit_xml_no_testsuite_name
     type: junit
-    command: mv testsuite_no_name.xml parse_me.xml
+    command: cp testsuite_no_name.xml parse_me.xml
     report_files:
       - parse_me.xml  
   - type: junit
-    command: mv testsuite_no_name.xml parse_me2.xml
+    command: cp testsuite_no_name.xml parse_me2.xml
     invocation: single
     report_files:
       - parse_me2.xml
