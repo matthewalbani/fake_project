@@ -27,6 +27,7 @@ tests:
       - parse_me.xml  
   - type: junit
     command: mv testsuite_no_name.xml parse_me2.xml
+    invocation: single
     report_files:
       - parse_me2.xml
 test_pattern:
