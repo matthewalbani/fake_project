@@ -292,7 +292,7 @@ module Integration_test
     if @next_profile
       p "Chose #{@next_profile} profile"
     else
-      @next_profile = 'all_integration_tests'
+      @next_profile = 'default'
       p "Couldn't match any any/all Jira components; defaulting to run all integration tests"
     end
 
