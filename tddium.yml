@@ -1,7 +1,7 @@
 ruby_version: "2.1.2"
 bundler_version: 1.10.6
 hooks:
-  enumeration: ./enumeration.sh
+  enumeration: gem install octokit && ruby enumeration.rb && cat test_list.json
 coverage:
   version: 2
   enabled: true
