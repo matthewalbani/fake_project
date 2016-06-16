@@ -4,7 +4,6 @@ coverage:
   version: 2
   enabled: true
 plan:
-  default:
   - default2
   - default3
   - default4
