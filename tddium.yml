@@ -29,4 +29,5 @@ profiles:
       - echo 'I am from the default 3'
     hooks:
       enumeration: ./enumeration.sh
+      worker_setup: echo $SOLANO_WORKER_NUM
       
