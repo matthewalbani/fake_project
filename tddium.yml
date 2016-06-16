@@ -4,9 +4,10 @@ coverage:
   version: 2
   enabled: true
 plan:
-  - default2
-  - default3
-  - default4
+  default:
+    - default2
+    - default3
+  -default4
 profiles:
   default:  
     tests:
