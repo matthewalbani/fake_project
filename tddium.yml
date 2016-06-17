@@ -7,7 +7,6 @@ plan:
   default:
     - default2
     - default3
-  default4:
 profiles:
   default:  
     tests:
@@ -28,13 +27,5 @@ profiles:
       - git status
       - git rev-parse HEAD
       - echo 'I am from the default 3'
-    hooks:
-      enumeration: ./enumeration.sh
-      worker_setup: echo $SOLANO_WORKER_NUM
-  default4:  
-    tests:
-      - git status
-      - git rev-parse HEAD
-      - echo 'I am from the default 2'
     test_pattern:
       - test/**_test.rb
