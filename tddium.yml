@@ -1,16 +1,40 @@
 ruby_version: "2.1.2"
 bundler_version: 1.10.6
-profiles:
-  default:
-    tests:
-      - git status
-      - git rev-parse HEAD
-      - echo 'I am from the master'
-
-  enumeration:
-    hooks:
-      enumeration: gem install octokit && ruby enumeration.rb && cat test_list.json
 coverage:
   version: 2
   enabled: true
-  ratchet: 80
+plan:
+  default:
+    - default2
+    - default3
+  default4:
+profiles:
+  default:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from default1'
+    test_pattern:
+      - test/faked_test.rb
+  default2:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the default 2'
+    test_pattern:
+      - test/**_test.rb
+  default3:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the default 3'
+    hooks:
+      enumeration: ./enumeration.sh
+      worker_setup: echo $SOLANO_WORKER_NUM
+  default4:  
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the default 2'
+    test_pattern:
+      - test/**_test.rb
