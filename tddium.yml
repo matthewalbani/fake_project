@@ -9,7 +9,7 @@ coverage:
 plan:
   default:
     - rerun
-profile:
+profiles:
   default:
     tests:
       - git status
