@@ -1,7 +1,5 @@
 ruby_version: "2.1.2"
 bundler_version: 1.10.6
-hooks:
-  enumeration: ruby ./enumeration.rb
 coverage:
   version: 2
   enabled: true
@@ -11,6 +9,8 @@ plan:
     - rerun
 profiles:
   default:
+    hooks:
+      enumeration: ruby ./enumeration.rb
     tests:
       - git status
       - git rev-parse HEAD
@@ -18,5 +18,7 @@ profiles:
     test_pattern:
       - test/faked_test.rb
   rerun:
+    hooks:
+      enumeration: ruby ./enumeration.rb  
     tests:
       - echo 'rerun'
