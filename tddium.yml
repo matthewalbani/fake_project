@@ -6,9 +6,17 @@ coverage:
   version: 2
   enabled: true
   ratchet: 80
-tests:
-  - git status
-  - git rev-parse HEAD
-  - echo 'I am from the master'
-test_pattern:
-  - test/faked_test.rb
+plan:
+  - default
+  - rerun
+profile:
+  default:
+    tests:
+      - git status
+      - git rev-parse HEAD
+      - echo 'I am from the master'
+    test_pattern:
+      - test/faked_test.rb
+  rerun:
+    tests:
+      - echo 'rerun'
