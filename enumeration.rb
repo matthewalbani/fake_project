@@ -186,7 +186,7 @@ class ApiServer
 
   def initialize
     @debug = true
-    @host = ENV['TDDIUM_API_SERVER']
+    @host = 'ci.solanolabs.com'
     #not set by defaul
     @user_api_key = ENV['API_KEY']
   end
