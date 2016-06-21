@@ -7,8 +7,8 @@ coverage:
   enabled: true
   ratchet: 80
 plan:
-  - default
-  - rerun
+  default:
+    - rerun
 profile:
   default:
     tests:
