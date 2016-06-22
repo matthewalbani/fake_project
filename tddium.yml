@@ -15,7 +15,7 @@ profiles:
     profile_config:
       advance_on: 'always'
     hooks:
-      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/950baa9c7da2bb4b3a634eaabfddf2664e2489f5/enumeration_rerun.rb && ruby enumeration_rerun.rb"
+      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_rerun.rb && ruby enumeration_rerun.rb"
     tests:
       - git status
       - git rev-parse HEAD
@@ -24,11 +24,11 @@ profiles:
       - test/faked_test.rb
   rerun:
     hooks:
-      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/950baa9c7da2bb4b3a634eaabfddf2664e2489f5/enumeration_rerun.rb && ruby enumeration_rerun.rb"
+      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_rerun.rb && ruby enumeration_rerun.rb"
     tests:
       - echo 'rerun'  
   filtering:
     hooks:
-      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/76784590262c1cc6b0732dfe8204dfe4d0335317/enumeration_basic_filtering.rb && ruby enumeration_basic_filtering.rb"
+      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_basic_filtering.rb && ruby enumeration_basic_filtering.rb"
     tests:
       - echo 'rerun'
