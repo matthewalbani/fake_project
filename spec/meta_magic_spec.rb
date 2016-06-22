@@ -13,4 +13,3 @@ describe FakedProject do
     expect(subject.dynamic).to eq("A dynamically defined instance method")
   end
 end
-
