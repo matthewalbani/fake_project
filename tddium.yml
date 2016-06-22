@@ -1,6 +1,6 @@
 ruby_version: "2.1.2"
 environment:
-  'API_KEY': '470c5a75b8a5dc5536bb7b4a75b89313b228a263'
+  'API_KEY': 470c5a75b8a5dc5536bb7b4a75b89313b228a263
 bundler_version: 1.10.6
 coverage:
   version: 2
