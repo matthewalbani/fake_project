@@ -11,3 +11,5 @@ class MetaMagicTest < Test::Unit::TestCase
     assert_equal "A dynamically defined instance method", p.dynamic
   end
 end
+
+
