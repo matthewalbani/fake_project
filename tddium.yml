@@ -13,7 +13,7 @@ plan:
 profiles:
   default:
     hooks:
-      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/8e068f0e25306d08e7860f5e4cd3c17fa07d37d7/enumeration_rerun.rb && ruby enumeration_rerun.rb"
+      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/950baa9c7da2bb4b3a634eaabfddf2664e2489f5/enumeration_rerun.rb && ruby enumeration_rerun.rb"
     tests:
       - git status
       - git rev-parse HEAD
@@ -22,6 +22,6 @@ profiles:
       - test/faked_test.rb
   rerun:
     hooks:
-      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/8e068f0e25306d08e7860f5e4cd3c17fa07d37d7/enumeration_rerun.rb && ruby enumeration_rerun.rb"
+      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/950baa9c7da2bb4b3a634eaabfddf2664e2489f5/enumeration_rerun.rb && ruby enumeration_rerun.rb"
     tests:
       - echo 'rerun'
