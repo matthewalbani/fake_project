@@ -32,6 +32,6 @@ profiles:
       enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_basic_filtering.rb && ruby enumeration_basic_filtering.rb"
   bash:
     hooks:
-      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_basic.sh && chmod +x ./enumeration_basic.sh && ./enumeration_basic.sh"
+      enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/c32a4484755d5df52d03d52eb7f73c8f6e84c5c2/enumeration_basic.sh && chmod +x ./enumeration_basic.sh && ./enumeration_basic.sh"
     tests:
       - echo 'bash'
