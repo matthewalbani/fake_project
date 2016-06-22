@@ -26,5 +26,3 @@ private
     "private method"
   end
 end
-
-
