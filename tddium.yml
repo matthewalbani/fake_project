@@ -1,6 +1,7 @@
 ruby_version: "2.1.2"
 environment:
   'API_KEY': 470c5a75b8a5dc5536bb7b4a75b89313b228a263
+  'TDDIUM_API_SERVER' : malbani-sandbox.slno.net
 bundler_version: 1.10.6
 coverage:
   version: 2
@@ -21,6 +22,6 @@ profiles:
       - test/faked_test.rb
   rerun:
     hooks:
-      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/c8a2a05f796ad71d95f7e1d4739047afac23cb65/enumeration_rerun.rb && ruby combined.rb"
+      enumeration: "wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/c8a2a05f796ad71d95f7e1d4739047afac23cb65/enumeration_rerun.rb && ruby combined.rb && export"
     tests:
       - echo 'rerun'
