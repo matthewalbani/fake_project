@@ -31,9 +31,9 @@ profiles:
       enumeration: "set && wget https://gist.githubusercontent.com/matthewalbani/5065a6496084aa17fd5ca0e544e29c77/raw/enumeration_basic.sh && chmod +x ./enumeration_basic.sh && ./enumeration_basic.sh"
     tests:
       - echo 'bash'
-  notests:
+  notests_1:
     hooks:
       enumeration: "echo '{}' > test_list.json"  
-  commands:
+  commands_1:
     hooks:
       enumeration: "echo '{"commands":["/bin/true","echo \'from testlist\'","/bin/ture"]}' > test_list.json"
