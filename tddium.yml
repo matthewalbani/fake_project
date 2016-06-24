@@ -33,4 +33,7 @@ profiles:
       - echo 'bash'
   notests:
     hooks:
-      enumeration: "echo '{}' > test_list.json"
+      enumeration: "echo '{}' > test_list.json"  
+  commands:
+    hooks:
+      enumeration: "echo '{"commands":["/bin/true","echo \'from testlist\'","/bin/ture"]}' > test_list.json"
