@@ -9,6 +9,9 @@ plan:
   default:
     - rerun
 profiles:
+  all:  
+  tests:
+    - /bin/true
   default:
     profile_config:
       advance_on: 'always'
