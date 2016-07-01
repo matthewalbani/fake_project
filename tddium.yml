@@ -3,6 +3,8 @@ environment:
   'API_KEY': 470c5a75b8a5dc5536bb7b4a75b89313b228a263
   'TDDIUM_API_SERVER' : malbani-sandbox.slno.net
 bundler_version: 1.10.6
+coverage:
+  version: 2
 plan:
   default:
     - rerun
