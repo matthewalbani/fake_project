@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.star
 require "bundler/setup"
 
 require "codeclimate-test-reporter"
