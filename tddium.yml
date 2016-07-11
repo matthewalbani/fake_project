@@ -3,6 +3,7 @@ java:
   java_version: java-7-openjdk
 bundler_version: 1.10.6
 hooks:
+  pre_setup: exit 1
   enumeration: ./enumeration.sh
 coverage:
   version: 2
@@ -11,4 +12,4 @@ coverage:
 profiles:
   default:
     tests:
-      - git statu"
+      - /bin/true
