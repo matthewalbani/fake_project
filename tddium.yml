@@ -4,7 +4,6 @@ environment:
   'TEST_VAR_TEST': FromTheYmal
 tests:
   - /bin/true
-  - echo $TEST_VAR_TEST
+  - env;echo $TEST_VAR_TEST
 test_pattern: none
-hooks:
-  post_setup: env;echo $TEST_VAR_TEST
+
