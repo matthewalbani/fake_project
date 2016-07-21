@@ -6,7 +6,7 @@ tests:
   - /bin/true
   - env;echo $TEST_VAR_TEST
 test_pattern: none
-profile:
+profiles:
   default:
     environment:
       'cat_test': fromProfile
