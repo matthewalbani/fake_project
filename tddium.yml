@@ -1,14 +1,18 @@
 ruby_version: "2.1.2"
-java:
-  java_version: java-7-openjdk
-bundler_version: 1.10.6
+environment:
+  'API_KEY': 470c5a75b8a5dc5536bb7b4a75b89313b228a26
+  'TEST_VAR_TEST': FromTheYmal
+tests:
+  - /bin/true
+  - env;echo $TEST_VAR_TEST
+test_pattern: none
+profiles:
+  default:
+    environment:
+      'cat_test': fromProfile
 cache:
  update_scripts:
   assets:      # user-provided name, can be used for logging/messaging
    key_script:  "echo "12345"
    paths:
     - REPO/tmp/cache/assets
-profiles:
-  default:
-    tests:
-      - /bin/true
