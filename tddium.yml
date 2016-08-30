@@ -2,13 +2,12 @@ ruby_version: "2.1.2"
 java:
   java_version: java-7-openjdk
 bundler_version: 1.10.6
-hooks:
-  pre_setup: exit 1
-  enumeration: ./enumeration.sh
-coverage:
-  version: 2
-  enabled: true
-  ratchet: 80
+cache:
+ update_scripts:
+  assets:      # user-provided name, can be used for logging/messaging
+   key_script:  "echo "12345"
+   paths:
+    - REPO/tmp/cache/assets
 profiles:
   default:
     tests:
