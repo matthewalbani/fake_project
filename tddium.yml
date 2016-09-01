@@ -16,3 +16,7 @@ cache:
    key_script:  echo "123456"
    paths:
     - REPO/tmp/cache/assets
+  assets2:      # user-provided name, can be used for logging/messaging
+   key_script:  echo "12"
+   paths:
+    - REPO/tmp/cats
