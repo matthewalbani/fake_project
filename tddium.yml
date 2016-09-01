@@ -13,6 +13,6 @@ profiles:
 cache:
  update_scripts:
   assets:      # user-provided name, can be used for logging/messaging
-   key_script:  echo "12345"
+   key_script:  echo "123456"
    paths:
     - REPO/tmp/cache/assets
