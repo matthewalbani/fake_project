@@ -19,4 +19,4 @@ cache:
     assets2:      # user-provided name, can be used for logging/messaging
       key_script:  echo "12222"
       paths:
-        - REPO/tmp/cats
+        - REPO/test
