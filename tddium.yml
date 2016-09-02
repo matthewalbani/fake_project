@@ -19,7 +19,7 @@ cache:
     - HOME/bundle 
   update_scripts:
     assets:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "156"
+      key_script:  echo "1562"
       paths:
         - REPO/tmp/cache/assets
     assets2:      # user-provided name, can be used for logging/messaging
