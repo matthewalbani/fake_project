@@ -14,6 +14,7 @@ cache:
   key_paths:
     - REPO/Gemfile.lock
     - Gemfile
+    - cat
   save_paths:
     - HOME/bundle 
   update_scripts:
