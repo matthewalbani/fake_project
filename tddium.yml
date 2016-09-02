@@ -12,7 +12,7 @@ profiles:
       'cat_test': fromProfile
 cache:
   key_paths:
-    - REPO/Gemfile.lock
+    - Gemfile.lock
   save_paths:
     - HOME/bundle 
   update_scripts:
