@@ -11,6 +11,12 @@ profiles:
     environment:
       'cat_test': fromProfile
 cache:
+  key_paths:
+    - REPO/Gemfile.lock		      
+    - Gemfile
+    - cat
+  save_paths:
+    - HOME/bundle 
   update_scripts:
     assets:      # user-provided name, can be used for logging/messaging
       key_script:  echo "156"
