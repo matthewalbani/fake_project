@@ -4,7 +4,7 @@ environment:
   'TEST_VAR_TEST': FromTheYmal
 tests:
   - /bin/true
-  - env;echo $TEST_VAR_TEST
+  - env;echo $TEST_VAR_TEST > ~/i_dont_exist.txt
 test_pattern: none
 profiles:
   default:
@@ -27,3 +27,4 @@ cache:
       key_script:  echo "12222"
       paths:
         - REPO/test
+        - HOME/i_dont_exist.txt
