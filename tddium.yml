@@ -24,7 +24,7 @@ cache:
       paths:
         - REPO/tmp/cache/assets
     assets2:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "122212"
+      key_script:  echo "1221212"
       paths:
         - REPO/test
         - HOME/i_dont_exist.txt
