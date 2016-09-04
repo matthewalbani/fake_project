@@ -23,6 +23,7 @@ cache:
     - HOME/i_dont_exist2.txt
     - HOME/i_dont_exist3.txt
     - HOME/i_dont_exist4.txt
+    - HOME/i_dont_exist5.txt
   # update_scripts:
   #   assets:      # user-provided name, can be used for logging/messaging
   #     key_script:  echo "1562"
