@@ -19,6 +19,7 @@ cache:
     - HOME/bundle 
     - HOME/cats
     - HOME/cats2
+    - HOME/cats3
   # update_scripts:
   #   assets:      # user-provided name, can be used for logging/messaging
   #     key_script:  echo "1562"
