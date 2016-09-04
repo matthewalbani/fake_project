@@ -18,13 +18,13 @@ cache:
   save_paths:
     - HOME/bundle 
     # - HOME/cats
-  update_scripts:
-    assets:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "1562"
-      paths:
-        - REPO/tmp/cache/assets
-    assets2:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "1221q2132"
-      paths:
-        - REPO/test
-        - HOME/i_dont_exist.txt
+  # update_scripts:
+  #   assets:      # user-provided name, can be used for logging/messaging
+  #     key_script:  echo "1562"
+  #     paths:
+  #       - REPO/tmp/cache/assets
+  #   assets2:      # user-provided name, can be used for logging/messaging
+  #     key_script:  echo "1221q2132"
+  #     paths:
+  #       - REPO/test
+  #       - HOME/i_dont_exist.txt
