@@ -4,9 +4,10 @@ environment:
   'TEST_VAR_TEST': FromTheYmal
 tests:
   - /bin/true
-  - env;echo $TEST_VAR_TEST > ~/i_dont_exist.txt
-  - cp test/faked_test.rb test/faked_test2.rb 
+  - env;
 test_pattern: none
+hooks:
+  pre_setup: echo $TEST_VAR_TEST > ~/i_dont_exist.txt && cp test/faked_test.rb test/faked_test2.rb
 profiles:
   default:
     environment:
@@ -27,7 +28,7 @@ cache:
       paths:
         - REPO/tmp/cache/assets
     assets2:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "12wqegadss22"
+      key_script:  echo "1212wqegadss22"
       paths:
         - REPO/test
         - HOME/i_dont_exist.txt
