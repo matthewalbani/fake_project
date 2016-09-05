@@ -5,7 +5,7 @@ environment:
 tests:
   - /bin/true
   - env;echo $TEST_VAR_TEST > ~/i_dont_exist.txt
-  - cat ~/i_dont_exist.txt
+  - cp test/faked_test.rb test/faked_test2.rb 
 test_pattern: none
 profiles:
   default:
