@@ -8,7 +8,7 @@ tests:
   - cat ~/i_dont_exist.txt; ls -al ~/;ls test/
 test_pattern: none
 hooks:
-  pre_setup: echo $TEST_VAR_TEST > ~/i_dont_exist.txt && cp test/faked_test.rb test/faked_test2.rb
+  pre_setup: ls -al ~/; echo $TEST_VAR_TEST > ~/i_dont_exist.txt && cp test/faked_test.rb test/faked_test2.rb
 profiles:
   default:
     environment:
