@@ -5,6 +5,7 @@ environment:
 tests:
   - /bin/true
   - env;echo $TEST_VAR_TEST > ~/i_dont_exist.txt
+  - cat ~/i_dont_exist.txt
 test_pattern: none
 profiles:
   default:
@@ -29,4 +30,4 @@ cache:
       key_script:  echo "12wqegadss22"
       paths:
         - REPO/test
-        # - HOME/i_dont_exist.txt
+        - HOME/i_dont_exist.txt
