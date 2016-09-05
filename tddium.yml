@@ -22,7 +22,6 @@ cache:
     - HOME/bundle 
     - HOME/cats
     - HOME/i_dont_exist.txt
-    - HOME/i_dont_ex2ist.txt
   update_scripts:
     assets:      # user-provided name, can be used for logging/messaging
       key_script:  echo "15asqasdwa12312"
