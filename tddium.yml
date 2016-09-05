@@ -25,7 +25,7 @@ cache:
     - HOME/i_dont_ex2ist.txt
   update_scripts:
     assets:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "15wesa123sasa12312"
+      key_script:  echo "15asoplksasa12312"
       paths:
         - REPO/tmp/cache/assets
     assets2:      # user-provided name, can be used for logging/messaging
