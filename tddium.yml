@@ -1,7 +1,15 @@
 ruby_version: "2.1.2"
 bundler_version: 1.10.6
-hooks:
-  enumeration: /bin/flase
+profiles:
+  default:
+    hooks:
+      enumeration: /bin/flase
+  different: 
+    hooks:
+      enumeration: echo 'cat' < test_list.json
+  different2: 
+    hooks:
+      enumeration: echo '"{\"a\":}"' < test_list.json
 coverage:
   version: 2
   enabled: true
@@ -12,3 +20,4 @@ tests:
   - echo 'I am from the master'
 test_pattern:
   - test/faked_test.rb
+
