@@ -4,7 +4,7 @@ environment:
   'TEST_VAR_TEST': FromTheYmal
 tests:
   - /bin/true
-  - env;echo $TEST_VAR_TEST
+  - env;echo $TEST_VAR_TEST; echo $IAMFROMUI; echo $should_not
 test_pattern: none
 profiles:
   default:
