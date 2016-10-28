@@ -4,3 +4,4 @@ coverage:
   version: 2
 tests:
   - /bin/true
+worker_limit: 1
