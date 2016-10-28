@@ -4,3 +4,4 @@ coverage:
   version: 2
 tests:
   - /bin/true
+test_pattern: none
