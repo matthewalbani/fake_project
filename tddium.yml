@@ -24,7 +24,7 @@ cache:
     - HOME/i_dont_exist.txt
   update_scripts:
     assets:      # user-provided name, can be used for logging/messaging
-      key_script:  echo "15asqasdwasdasaasd1wqeqwe2312"
+      key_script:  echo "15asqasdwasdasawqewqasd1wqeqwe2312"
       paths:
         - REPO/tmp/cache/assets
     assets2:      # user-provided name, can be used for logging/messaging
