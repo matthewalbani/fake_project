@@ -23,7 +23,9 @@ profiles:
       - test/faked_test.rb
   rerun:
     tests:
-      - echo 'rerun'  
+      - echo 'rerun' 
+    test_pattern:
+      - none
   filtering:
     tests:
     - /bin/true
