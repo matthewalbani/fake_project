@@ -24,6 +24,7 @@ profiles:
   rerun:
     tests:
       - echo 'rerun' 
+      - /bin/false
     test_pattern:
       - none
   filtering:
