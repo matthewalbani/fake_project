@@ -39,6 +39,9 @@ profiles:
   notests_1:
     hooks:
       enumeration: "echo '{}' > test_list.json"  
+  notests_1:
+    tests:
+      - sleep 60
   commands_1:
     hooks:
       enumeration: "echo '{\"commands\":[\"/bin/true\",\"echo \'from testlist\'\",\"/bin/ture\"]}' > test_list.json"
