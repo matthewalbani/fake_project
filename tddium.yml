@@ -10,8 +10,8 @@ plan:
     - rerun
 profiles:
   all:  
-  tests:
-    - /bin/true
+    tests:
+      - /bin/true
   default:
     profile_config:
       advance_on: 'always'
@@ -39,7 +39,7 @@ profiles:
   notests_1:
     hooks:
       enumeration: "echo '{}' > test_list.json"  
-  notests_1:
+  sleepy:
     tests:
       - sleep 60
   commands_1:
