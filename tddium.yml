@@ -42,6 +42,7 @@ profiles:
   sleepy:
     tests:
       - sleep 60
+      - fallocate -l 8G large_file.txt
   commands_1:
     hooks:
       enumeration: "echo '{\"commands\":[\"/bin/true\",\"echo \'from testlist\'\",\"/bin/ture\"]}' > test_list.json"
