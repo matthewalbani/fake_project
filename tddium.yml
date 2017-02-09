@@ -46,6 +46,3 @@ profiles:
   commands_1:
     hooks:
       enumeration: "echo '{\"commands\":[\"/bin/true\",\"echo \'from testlist\'\",\"/bin/ture\"]}' > test_list.json"
-
-
-
